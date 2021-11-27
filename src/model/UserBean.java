@@ -7,7 +7,7 @@ import java.io.Serializable;
 //自分で作成したクラスをインスタンスにしてスコープに置くには、Beanにしないといけない
 
 // PostgreSQLは user が予約語なので、 userは "" で囲んでエスケープすれば使えますが、使わないほうがいいです いちいち select文などでも "user" と書かないとダメです。
-// このモデル Beanクラスに関連するテーブルは usertable テーブルです  userが予約語なので、usertable としてます
+// このモデル Beanクラスに関連するテーブルは users テーブルです  userが予約語なので、users としてます ちなみに usertableというテーブル名にはしないでください
 //  ユーザーのカラムは schduleuser カラムとしてデータベースで作っています ちなみに、PostgreSQLは テーブル名カラム名全て小文字です
 public class UserBean implements Serializable {
 
